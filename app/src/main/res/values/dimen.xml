@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small">5dp</dimen>
+    <dimen name="medium">10dp</dimen>
+    <dimen name="large">15dp</dimen>
+    <dimen name="extra_large">20dp</dimen>
+
+    <!--Payment-->
+    <dimen name="payment_small">5dp</dimen>
+    <dimen name="payment_medium">10dp</dimen>
+    <dimen name="payment_large">15dp</dimen>
+    <dimen name="payment_extra_large">20dp</dimen>
+
+    <dimen name="payment_top_margin">140dp</dimen>
+    <dimen name="payment_top_margin_small">60dp</dimen>
+
+    <dimen name="cardCornerRadius">15dp</dimen>
+
+    <dimen name="evento_card_image_heigh">170dp</dimen>
+
+</resources>

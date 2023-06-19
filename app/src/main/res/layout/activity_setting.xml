@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@color/black"
+    tools:context=".ui.activity.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/lay_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/app_bar"
+                style="@style/Toolbar.Ingresso"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/arrow_back_24"
+                app:title="Configuração" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_app_bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_fechar"
+                    style="@style/Button.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large"
+                    android:layout_marginTop="@dimen/medium"
+                    android:layout_marginRight="@dimen/large"
+                    android:onClick="onClickFecharCaixa"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_caixa_registradora_48"
+                    android:text="Fechar Caixa" />
+
+                <Button
+                    android:id="@+id/bt_atualizar"
+                    style="@style/Button.Grey"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large"
+                    android:layout_marginTop="@dimen/medium"
+                    android:layout_marginRight="@dimen/large"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:onClick="onClickAtualizar"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_refresh_48"
+                    android:text="Atualizar" />
+
+
+                <Button
+                    android:id="@+id/bt_reimprimir"
+                    style="@style/Button.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large"
+                    android:layout_marginTop="@dimen/medium"
+                    android:layout_marginRight="@dimen/large"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:onClick="onClickReimprimirComprovante"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_refresh_48"
+                    android:text="Reimprimir Comprovante" />
+                <Button
+                    android:id="@+id/bt_estornar"
+                    style="@style/Button.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large"
+                    android:onClick="onClickEstornarCartao"
+                    android:layout_marginTop="@dimen/medium"
+                    android:layout_marginRight="@dimen/large"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_cancel_presentation_48"
+                    android:text="Estornar Cartão" />
+
+                <Button
+                    android:id="@+id/bt_logout"
+                    style="@style/Button.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large"
+                    android:onClick="onClickLogout"
+                    android:layout_marginTop="@dimen/medium"
+                    android:layout_marginRight="@dimen/large"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:gravity="start|center_vertical"
+                    android:drawableEnd="@drawable/ic_logout_48"
+                    android:text="Realizar Logout" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            android:id="@+id/layout_carrinho_id" android:visibility="gone"
+            layout="@layout/layout_carrinho" />
+
+        <include layout="@layout/layout_versao" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

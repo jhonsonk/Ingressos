@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_background">@color/black</color>
+
+    <!--purple-->
+    <color name="purple">#FF6f42c1</color>
+    <color name="purple_100">#FFe2d9f3</color>
+    <color name="purple_300">#FFa98eda</color>
+    <color name="purple_700">#FF432874</color>
+    <color name="purple_900">#FF160d27</color>
+
+    <!--Gray-->
+    <color name="gray">#adb5bd</color>
+    <color name="gray_100">#FFf8f9fa</color>
+    <color name="gray_300">#FFdee2e6</color>
+    <color name="gray_700">#DD495057</color>
+    <color name="gray_700_translucent">#AA495057</color>
+    <color name="gray_900">#FF212529</color>
+
+    <!--Blue-->
+    <color name="blue">#FF0d6efd</color>
+    <color name="blue_100">#FFcfe2ff</color>
+    <color name="blue_300">#FF6ea8fe</color>
+    <color name="blue_700">#FF084298</color>
+    <color name="blue_900">#FF031633</color>
+
+    <!--red-->
+    <color name="red">#FFdc3545</color>
+    <color name="red_100">#FFf8d7da</color>
+    <color name="red_300">#FFea868f</color>
+    <color name="red_700">#FF842029</color>
+    <color name="red_900">#FF2c0b0e</color>
+
+    <!--green-->
+    <color name="green">#FF198754</color>
+    <color name="green_100">#FFd1e7dd</color>
+    <color name="green_300">#FF198754</color>
+    <color name="green_700">#FF0f5132</color>
+    <color name="green_900">#FF051b11</color>
+
+    <!--yellow-->
+    <color name="yellow">#FFffc107</color>
+    <color name="yellow_100">#FFfff3cd</color>
+    <color name="yellow_300">#FFffda6a</color>
+    <color name="yellow_700">#FF997404</color>
+    <color name="yellow_900">#FF332701</color>
+
+    <!--cyan-->
+    <color name="cyan">#FF0dcaf0</color>
+    <color name="cyan_100">#FFcff4fc</color>
+    <color name="cyan_300">#FF6edff6</color>
+    <color name="cyan_700">#FF087990</color>
+    <color name="cyan_900">#FF032830</color>
+</resources>

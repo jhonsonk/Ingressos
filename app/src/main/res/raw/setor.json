@@ -1,0 +1,82 @@
+[
+  {
+    "codigo": "SET_BD3C862B7F982075",
+    "nome": "AREA VIP",
+    "ordem": 1,
+    "venda_fechada": false,
+    "ativo": true,
+    "quantidade_cpf": 4,
+    "ingressos": [
+      {
+        "nome": "AREA VIP UNITARIO (p/1 pessoa)",
+        "sexo": "Unissex",
+        "tipo": "Em_Aberto",
+        "ordem": 1,
+        "ativo": true,
+        "taxa_servico": 4.5,
+        "preco_ingresso": 30,
+        "combo": 1,
+        "valor": 34.5,
+        "quantidade": 100,
+        "lote_nome": "1 LOTE",
+        "valor_uuid": "8718fd79-4e72-4b39-86a8-46a0dec6ed52",
+        "reservado": 0
+      },
+      {
+        "nome": "AREA VIP DUPLO (p/ 2 pessoas)",
+        "sexo": "Unissex",
+        "tipo": "Em_Aberto",
+        "ordem": 2,
+        "ativo": true,
+        "taxa_servico": 6,
+        "preco_ingresso": 40,
+        "combo": 2,
+        "valor": 46,
+        "quantidade": 100,
+        "lote_nome": "1 LOTE",
+        "valor_uuid": "e13782ce-eb56-44a7-b5d6-adc13ed4f609",
+        "reservado": 0
+      },
+      {
+        "nome": "AREA VIP TRIPLO (p/ 3 pessoas)",
+        "sexo": "Unissex",
+        "tipo": "Em_Aberto",
+        "ordem": 3,
+        "ativo": true,
+        "taxa_servico": 9,
+        "preco_ingresso": 60,
+        "combo": 3,
+        "valor": 69,
+        "quantidade": 100,
+        "lote_nome": "1 LOTE",
+        "valor_uuid": "8bd6e51f-afa9-4c18-a24c-e3f533b377f6",
+        "reservado": 0
+      }
+    ]
+  },
+  {
+    "codigo": "SET_A5EF09B867C3185E",
+    "nome": "CAMAROTE",
+    "ordem": 2,
+    "venda_fechada": false,
+    "ativo": true,
+    "quantidade_cpf": 4,
+    "ingressos": [
+      {
+        "nome": "CAMAROTE (p/1 pessoa)",
+        "sexo": "Unissex",
+        "tipo": "Em_Aberto",
+        "ordem": 1,
+        "ativo": true,
+        "taxa_servico": 7.5,
+        "preco_ingresso": 50,
+        "combo": 1,
+        "valor": 57.5,
+        "quantidade": 100,
+        "lote_nome": "1 LOTE",
+        "valor_uuid": "427cddc0-058f-4eef-ac98-0d20f1362a9d",
+        "reservado": 0
+      }
+    ]
+  }
+]

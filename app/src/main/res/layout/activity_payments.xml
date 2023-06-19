@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layPagamento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_900"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/lay_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Toolbar.Ingresso"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_900"
+            app:navigationIcon="@drawable/arrow_back_24"
+            app:title="Crédito" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--Centor-->
+    <RelativeLayout
+        android:id="@+id/layCentre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layCancelar"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/payment_top_margin"
+        android:visibility="gone">
+
+        <!--Icone e lood-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layLoadImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/payment_medium"
+            android:layout_marginTop="@dimen/payment_medium"
+            android:layout_marginEnd="@dimen/payment_medium"
+            android:layout_marginBottom="@dimen/payment_medium"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressesIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="visible"
+                app:indicatorColor="@color/gray_300"
+                app:indicatorSize="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/credit_card_payment_48"
+                app:trackThickness="6dp" />
+
+            <ImageView
+                android:id="@+id/imgPagamento"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="@dimen/payment_medium"
+                android:layout_marginBottom="@dimen/payment_medium"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/payment_init_48" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/layTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layLoadImg"
+            android:layout_marginStart="@dimen/payment_medium"
+            android:layout_marginEnd="@dimen/payment_medium"
+            android:layout_marginBottom="@dimen/payment_medium"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvMessage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/payment_small"
+                android:gravity="center"
+                android:text="Iniciando..."
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvMessage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Digite a senha"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="****"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/payment_medium"
+                android:gravity="center"
+                android:text="Valor: R$0,00"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMetodo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DEBITO"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--Credito-->
+    <LinearLayout
+        android:id="@+id/layCredito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layCancelar"
+        android:layout_below="@id/lay_app_bar"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/medium"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/payment_medium"
+            android:layout_marginTop="@dimen/payment_small"
+            android:layout_marginEnd="@dimen/payment_medium"
+            android:layout_marginBottom="@dimen/payment_small"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btCreditoAvisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:text="Crédito à Vista" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/payment_medium"
+            android:layout_marginTop="@dimen/payment_small"
+            android:layout_marginEnd="@dimen/payment_medium"
+            android:layout_marginBottom="@dimen/payment_small"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btCreditoComprador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:text="Credito Parcelado Comprador" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/payment_medium"
+            android:layout_marginTop="@dimen/payment_small"
+            android:layout_marginEnd="@dimen/payment_medium"
+            android:layout_marginBottom="@dimen/payment_small"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btCreditoVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:text="Credito Parcelado Vendedor"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Parcelas-->
+
+    <LinearLayout
+        android:id="@+id/lay_parcelas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layCancelar"
+        android:layout_below="@id/lay_app_bar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/payment_medium"
+        android:layout_marginEnd="@dimen/payment_medium"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Escolha o número de parcelas:"
+            android:textColor="@color/gray_300" />
+
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top">
+
+            <!--Parcelas-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_installments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|center"
+                tools:listitem="@layout/list_item_installment" />
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <!--Botao-->
+    <RelativeLayout
+        android:id="@+id/layCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/payment_medium"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btCancelarPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/button_danger"
+            android:text="Cancelar Pagamento" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

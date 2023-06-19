@@ -1,0 +1,81 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/small"
+    android:layout_marginBottom="@dimen/small">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ly_ingresso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ingresso_quantidade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.99"
+                android:gravity="left|center_vertical"
+                android:text="99 X "
+                android:textColor="@color/gray_300"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ingresso_nome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.31"
+                android:gravity="bottom"
+                android:text="Pista Unisex Meia Pista Unisex Meia Pista Unisex Meia Pista Unisex Meia"
+                android:textColor="@color/gray_300"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ingresso_valor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.89"
+                android:gravity="right|center_vertical"
+                android:text=" R$ 9999,99"
+                android:textColor="@color/gray_300"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/color_background"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/small"
+                android:paddingBottom="@dimen/large" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_300" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

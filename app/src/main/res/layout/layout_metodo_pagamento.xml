@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_carinho"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/lay_rodape"
+    android:background="@color/purple_700"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lay_dinheiro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_weight="0.3"
+            android:background="@drawable/button_success"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/small"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/money_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:text="Dinheiro"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_credito"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_weight="0.3"
+            android:background="@drawable/button_success"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/small"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/credit_card_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:text="Crédito"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:srcCompat="@drawable/logo_branco" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_debito"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_weight="0.3"
+            android:background="@drawable/button_success"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/small"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/debito_card_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:text="Débito"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:srcCompat="@drawable/logo_branco" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_pix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_weight="0.3"
+            android:background="@drawable/button_success"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/small"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pix_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:text="Pix"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:srcCompat="@drawable/logo_branco" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/lay_voltar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_weight="0.3"
+            android:background="@drawable/button_primary"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/small"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="90"
+                android:scaleType="fitCenter"
+                android:src="@drawable/turn_back_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:text="Voltar"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_weight="0.2"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/small"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:src="@drawable/logo_branco"
+                android:text="Total"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/valor_total_carrinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:src="@drawable/logo_branco"
+                android:text="R$0,00"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_weight="0.3"
+            android:background="@drawable/button_danger"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/small"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cancel_48" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:text="Cancelar"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:srcCompat="@drawable/logo_branco" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
